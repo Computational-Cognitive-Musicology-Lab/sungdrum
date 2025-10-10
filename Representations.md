@@ -193,11 +193,11 @@ said
 you_are
 a
 base_
-_head.
-Man
+_head."
+"Man
 you
 wast-
--ed
+-ed."
 *-
 ```
 
@@ -248,44 +248,44 @@ In `*ascii-Kirschenbaum` we use `+` in place or `*`.)
 As an example, below I list the phonemes suitable for representing general American English dialects in the unicode and Kirshenbaum transliteration.
 (Some English dialects will require more vowel distinctions.)
 
-*Unicode*  *Kirshenbaum*  *Example word*
----------- -------------- ---------------
-p          p              **p**it
-b          b              **b**it
-t          t              **t**ip
-d          d              **d**o 
-k          k              **c**at
-ɡ          g              **g**o
-m          m              **m**at
-n          n              **n**o
-ŋ          N              ri**ng**
-ɾ          + (not *)      bu**tt**er
-f          f              **f**at
-v          v              **v**at
-θ          T              **th**in
-ð          D              **th**is
-s          s              **s**it
-z          z              **z**oo
-ʃ          S              **sh**oe
-ʒ          Z              sei**z**ure
-h          h              **h**at
-ɹ          r              **r**ot
-j          j              **y**es
-l          l              **l**eft
-w          w              **w**hat
-i          i              b**ea**t
-ɛ          E              b**e**t
-ɑ          A              b**o**t
-ɔ          O              b**oa*t
-o          o              b**oa*t
-u          u              b**oo**t
-y          y              **y**es
-ʌ          V              b**u**ck
-ɪ          I              b**i**t
-ʊ          U              p**u**t
-ə          @              **a** car
-æ          &              b**a**t
-ɚ          R              b**urr**
+| Unicode    | Kirshenbaum    | Example word    |
+| ---------- | -------------- | --------------- |
+| p          | p              | **p**it         |
+| b          | b              | **b**it         |
+| t          | t              | **t**ip         |
+| d          | d              | **d**o          |
+| k          | k              | **c**at         |
+| ɡ          | g              | **g**o          |
+| m          | m              | **m**at         |
+| n          | n              | **n**o          |
+| ŋ          | N              | ri**ng**        |
+| ɾ          | + (not *)      | bu**tt**er      |
+| f          | f              | **f**at         |
+| v          | v              | **v**at         |
+| θ          | T              | **th**in        |
+| ð          | D              | **th**is        |
+| s          | s              | **s**it         |
+| z          | z              | **z**oo         |
+| ʃ          | S              | **sh**oe        |
+| ʒ          | Z              | sei**z**ure     |
+| h          | h              | **h**at         |
+| ɹ          | r              | **r**ot         |
+| j          | j              | **y**es         |
+| l          | l              | **l**eft        |
+| w          | w              | **w**hat        |
+| i          | i              | b**ea**t        |
+| ɛ          | E              | b**e**t         |
+| ɑ          | A              | b**o**t         |
+| ɔ          | O              | b**oa*t         |
+| o          | o              | b**oa*t         |
+| u          | u              | b**oo**t        |
+| y          | y              | **y**es         |
+| ʌ          | V              | b**u**ck        |
+| ɪ          | I              | b**i**t         |
+| ʊ          | U              | p**u**t         |
+| ə          | @              | **a** car       |
+| æ          | &              | b**a**t         |
+| ɚ          | R              | b**urr**        |
 
 
 Accents are indicated with `'` (primary accent) and `,` (secondary accent) placed at the beginning of accented tokens.
@@ -295,18 +295,18 @@ Note that, though "accents" are clearest within multi-syllable words, single syl
 Humdrum example:
 
 ```
-**liedtext  **ipa  **ipa
-*silbe  *silbe  *silbe
-*  *unicode  *ascii-Kirshenbaum
-i  'aI  'aI
-see  'si  'si
-a  ə  @
-bad  'bæd  'b&d
-moon  'mun  'mun
-a-  ə  @
--ris-  'raI  'raI
--ing  zIn  zIn
-*-  *-  *-
+**liedtext  **ipa     **ipa
+*silbe      *silbe    *silbe
+*           *unicode  *ascii-Kirshenbaum
+i           'aI       'aI
+see         'si       'si
+a           ə         @
+bad         'bæd      'b&d
+moon        'mun      'mun
+a-          ə         @
+-ris-       'raI      'raI
+-ing        zIn       zIn
+*-          *-        *-
 ```
  
 
@@ -326,36 +326,36 @@ If more than one successive (or proximal) syllables/words rhyme, they may be gro
 Example:
 
 ```
-**liedtext  **riem
-*Seng-US  *Seng-US
-*silbe  *silbe
-to  .
-all  .
-the  .
-la-  A
--dies  .
-in  .
-the  .
-place  A
-with  .
-style  .
-and  .
-grace  A
-allow  .
-me  .
-to  .
-lace  A
-these  .
-lyr-  .
--i-  .
--cal  .
-douche-  (B
--s  b)
-in  .
-your  .
-bush-  (B
--es  b)
-*-  *-
+**liedtext   **riem
+*Seng-US     *Seng-US
+*silbe       *silbe
+to           .
+all          .
+the          .
+la-          A
+-dies        .
+in           .
+the          .
+place        A
+with         .
+style        .
+and          .
+grace        A
+allow        .
+me           .
+to           .
+lace         A
+these        .
+lyr-         .
+-i-          .
+-cal         .
+douche-      (B
+-s           b)
+in           .
+your         .
+bush-        (B
+-es          b)
+*-           *-
 ```
 
 > For many complex examples, see the [Musical Corpus of Flow](https://github.com/Computational-Cognitive-Musicology-Lab/MCFlow) dataset.
@@ -388,17 +388,17 @@ POS tags are associated with words; If paired with a syllabic (`*silbe`) represe
 
 ```
 **liedtext  **wortart
-*Seng-US  *Seng-US
-*silbe  *
-i  PRON
-see  VERB
-a  DET
-bad  ADJ
-moon  NOUN
-a-  VERB
--ris-  .
--ing  .
-*-  *-
+*Seng-US    *Seng-US
+*silbe      *
+i           PRON
+see         VERB
+a           DET
+bad         ADJ
+moon        NOUN
+a-          VERB
+-ris-       .
+-ing        .
+*-          *-
 ```
 
 
@@ -424,23 +424,23 @@ We use the categories from the [Universal Dependencies](https://universaldepende
 
 ```
 **liedtext  **dependenz
-*silbe  *
-i  nsubj>
-see  ROOT
-a  det>moon
-bad  nmod>
-moon  nsubj>
-a-  ccomp<see
--ris-  .
--ing  .
-=  =
-i  nsubj>
-see  ROOT
-trou-  obj<
--ble  .
-on  case>way
-the  det>
-way  nmod<trouble
+*silbe      *
+i           nsubj>
+see         ROOT
+a           det>moon
+bad         nmod>
+moon        nsubj>
+a-          ccomp<see
+-ris-       .
+-ing        .
+=           =
+i           nsubj>
+see         ROOT
+trou-       obj<
+-ble        .
+on          case>way
+the         det>
+way         nmod<trouble
 ```
 
 The `**dependenz` tokens above correspond to this dependency tree:
