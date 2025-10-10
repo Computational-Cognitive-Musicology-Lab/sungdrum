@@ -72,16 +72,16 @@ Several tandem interpretations are relevant in all of my exclusive interpretatio
 ## **liedtext
 
 > The `**liedtext` interpretation is closely modeled on the classic `**silbe` and `**text` representations, but using `*silbe` and `*wort` as tandem interpretations to distinguish syllabic and word-level representations respectively.
-> Still, to keep everything in one place, I fully define them both here, without reference to the older interpretations.
+> Still, to keep everything in one place, I fully define it here, without reference to the older interpretations.
 
 The `**liedtext` represents the lyrics---the words of the music, understood as abstract lexical categories.
-This means that `**liedtext` does not represent pronounciation.
+This means that `**liedtext` does not represent pronunciation.
 Rather, the appropriate canonical, "dictionary" spelling of all words should be used---this makes it easier to aggregate and compare words across pieces and corpora.
 This also includes contractions, which should be written in full form: `don't` = `do_not`. 
-(This avoids confusion with possessive markers, for example in a word like `somebody's`---`somebody_is` versus `somebody's` (possesive).)
+(This avoids confusion with possessive markers, for example in a word like `somebody's`---`somebody_is` versus `somebody's` (possessive).)
 
-> If you wish to indicated dialectical pronounciations that are not "standard"---for example, `runnin' with the devil`---you can provide a 
-> sprach interpretation like `*Seng-US-southern` or, better yet, indicate pronunciation explicitely in an `**ipa` spine.
+> If you wish to indicated dialectical pronunciations that are not "standard"---for example, `runnin' with the devil`---you can provide a 
+> sprach interpretation like `*Seng-US-southern` or, better yet, indicate pronunciation explicitly in an `**ipa` spine.
 > Writing "`runnin'`" should only be valid `**liedtext` if you are doing `*verbatim` copying of a score/text.
 
 ----
@@ -95,30 +95,30 @@ Interpretation of `**liedtext` data depends on the `**silbe`/`**wort`/etc. tande
 + When `*wort[]` is in effect, each token represents an entire word.
   However, unlike `**wort`, in multi-syllable words the whole word is repeated for each syllable, but followed by `[n]` enumerating the syllable number.
 + When `*silbe` is in effect, each token represents a syllable.
-  For multi-syllable words, `-` must be placed at the begining and/or end of tokens, to indicate in-word connections.
+  For multi-syllable words, `-` must be placed at the beginning and/or end of tokens, to indicate in-word connections.
     + `-` at the end of a token indicates that the next syllable belongs to the same word.
     + `-` at the beginning of a token indicates that the previous syllable belongs to the same word.
     + `-` may also occur at the start and end of a token.
     + For hyphenated words put a tilde (`~`) at the connection point, similar to a hyphen connecting syllables.
     
-If fully encoded, `**silbe`, `**wort-`, and `**wort[n]` tokens are fully interchangebale with no loss of information.
+If fully encoded, `**silbe`, `**wort-`, and `**wort[n]` tokens are fully interchangeable with no loss of information.
 In contrast, `**wort` and `**lemma` discard some information (syllable boundary information)
     
     
 ```
-**kern	**liedtext	**liedtext	**liedtext	**liedtext	**liedtext
-*	*silbe	*wort	*wort-	*wort[n]	*lemma
-*M4/4	*	*	*	*	*
-2F#	looks	looks	looks	looks	look
-2F#	like 	like	like	like	like
-=	=	=	=	=	=
-4E	earth-	earthquakes	earth-quakes	earthquakes[1]	earthquake
-4D	|	|	|	|	|
-4E	-quakes	-	-	earthquakes[2]	-
-8D	and	and	and	and	and
-4F#	light-	lightning	light-ning	lightning[1]	lightning
-4.D	-ning	-	-	-	-
-*-	*-	*-	*-	*-
+**kern  **liedtext   **liedtext  **liedtext    **liedtext      **liedtext
+*       *silbe       *wort       *wort-        *wort[n]        *lemma
+*M4/4   *            *           *             *               *
+2F#     looks        looks       looks         looks           look
+2F#     like         like        like          like            like
+=       =            =           =             =               =
+4E      earth-       earthquakes earth-quakes  earthquakes[1]  earthquake
+4D      |            |           |             |               |
+4E      -quakes      -           -             earthquakes[2]  -
+8D      and          and         and           and             and
+4F#     light-       lightning   light-ning    lightning[1]    lightning
+4.D     -ning        -           -             -               -
+*-      *-           *-          *-            *-              *-
 ```
 
 #### Syllabification
@@ -162,7 +162,7 @@ Punctuation, should be used to represent one unambiguous piece of information.
 
 I recommend avoiding uses of punctuation for acronyms or abbreviations. 
 
-+ Acronyms should simply appear as capital letters, with no periods. Each capital letter is equivalent to a word, and they should be connected by `~` because they act like mutli-word units.
++ Acronyms should simply appear as capital letters, with no periods. Each capital letter is equivalent to a word, and they should be connected by `~` because they act like multi-word units.
   + `A~K~A`
 + Abbreviations should be spelled out:
   + `et cetera` instead of "etc."
@@ -295,18 +295,18 @@ Note that, though "accents" are clearest within multi-syllable words, single syl
 Humdrum example:
 
 ```
-**liedtext	**ipa	**ipa
-*silbe	*silbe	*silbe
-*	*unicode	*ascii-Kirshenbaum
-i	'aI	'aI
-see	'si	'si
-a	ə	@
-bad	'bæd	'b&d
-moon	'mun	'mun
-a-	ə	@
--ris-	'raI	'raI
--ing	zIn	zIn
-*-	*-	*-
+**liedtext  **ipa  **ipa
+*silbe  *silbe  *silbe
+*  *unicode  *ascii-Kirshenbaum
+i  'aI  'aI
+see  'si  'si
+a  ə  @
+bad  'bæd  'b&d
+moon  'mun  'mun
+a-  ə  @
+-ris-  'raI  'raI
+-ing  zIn  zIn
+*-  *-  *-
 ```
  
 
@@ -326,36 +326,36 @@ If more than one successive (or proximal) syllables/words rhyme, they may be gro
 Example:
 
 ```
-**liedtext	**riem
-*Seng-US	*Seng-US
-*silbe	*silbe
-to	.
-all	.
-the	.
-la-	A
--dies	.
-in	.
-the	.
-place	A
-with	.
-style	.
-and	.
-grace	A
-allow	.
-me	.
-to	.
-lace	A
-these	.
-lyr-	.
--i-	.
--cal	.
-douche-	(B
--s	b)
-in	.
-your	.
-bush-	(B
--es	b)
-*-	*-
+**liedtext  **riem
+*Seng-US  *Seng-US
+*silbe  *silbe
+to  .
+all  .
+the  .
+la-  A
+-dies  .
+in  .
+the  .
+place  A
+with  .
+style  .
+and  .
+grace  A
+allow  .
+me  .
+to  .
+lace  A
+these  .
+lyr-  .
+-i-  .
+-cal  .
+douche-  (B
+-s  b)
+in  .
+your  .
+bush-  (B
+-es  b)
+*-  *-
 ```
 
 > For many complex examples, see the [Musical Corpus of Flow](https://github.com/Computational-Cognitive-Musicology-Lab/MCFlow) dataset.
@@ -387,18 +387,18 @@ We recommend using the categories from the [Universal Dependencies](https://univ
 POS tags are associated with words; If paired with a syllabic (`*silbe`) representation, the tag should be aligned with the first syllable in each word.
 
 ```
-**liedtext	**wortart
-*Seng-US	*Seng-US
-*silbe	*
-i	PRON
-see	VERB
-a	DET
-bad	ADJ
-moon	NOUN
-a-	VERB
--ris-	.
--ing	.
-*-	*-
+**liedtext  **wortart
+*Seng-US  *Seng-US
+*silbe  *
+i  PRON
+see  VERB
+a  DET
+bad  ADJ
+moon  NOUN
+a-  VERB
+-ris-  .
+-ing  .
+*-  *-
 ```
 
 
@@ -423,24 +423,24 @@ We may also include the type of the dependency before the arrow.
 We use the categories from the [Universal Dependencies](https://universaldependencies.org/u/dep/index.html) project.
 
 ```
-**liedtext	**dependenz
-*silbe	*
-i	nsubj>
-see	ROOT
-a	det>moon
-bad	nmod>
-moon	nsubj>
-a-	ccomp<see
--ris-	.
--ing	.
-=	=
-i	nsubj>
-see	ROOT
-trou-	obj<
--ble	.
-on	case>way
-the	det>
-way	nmod<trouble
+**liedtext  **dependenz
+*silbe  *
+i  nsubj>
+see  ROOT
+a  det>moon
+bad  nmod>
+moon  nsubj>
+a-  ccomp<see
+-ris-  .
+-ing  .
+=  =
+i  nsubj>
+see  ROOT
+trou-  obj<
+-ble  .
+on  case>way
+the  det>
+way  nmod<trouble
 ```
 
 The `**dependenz` tokens above correspond to this dependency tree:
