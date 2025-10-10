@@ -276,8 +276,8 @@ As an example, below I list the phonemes suitable for representing general Ameri
 | i          | i              | b**ea**t        |
 | ɛ          | E              | b**e**t         |
 | ɑ          | A              | b**o**t         |
-| ɔ          | O              | b**oa*t         |
-| o          | o              | b**oa*t         |
+| ɔ          | O              | b**oa**t        |
+| o          | o              | b**oa**t        |
 | u          | u              | b**oo**t        |
 | y          | y              | **y**es         |
 | ʌ          | V              | b**u**ck        |
