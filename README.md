@@ -7,7 +7,7 @@ This repo contains several documents containing recommendations and standards fo
 The main contribution at this time, is a set of new standards for encoding lyrical and linguistic data in humdrum syntax.
 
 + [Issues with lyric data](Issues.md) (problems)
-+ [Humdrum representations](Representations.md) (sollutions)
++ [Humdrum representations](Representations.md) (solutions)
 
 > This project is still underdevelopment. I'll hopefully be refining my recommendations, and pushing some useful tools this Fall (2025).
 
